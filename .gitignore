@@ -1,0 +1,52 @@
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+ipch/
+
+# Arquivos gerados pelo CMake
+out/
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CMakeUserPresets.json
+
+# Binários e arquivos compilados
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.pch
+*.o
+*.a
+
+# Ambientes e configurações locais
+.env
+.env.*
+!.env.example
+*.local
+
+# Credenciais e certificados
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
