@@ -49,4 +49,31 @@ FinanceAssistant/
 
 ## Status
 
-Em desenvolvimento — estrutura inicial do repositório.
+Em desenvolvimento.
+
+## API HTTP e Swagger
+
+Configure o arquivo `.env` usado pelo `docker-compose.yml` e inicie o banco:
+
+```bash
+docker compose up -d
+```
+
+O executável inicia a API na porta `8080` por padrão. A conexão pode ser alterada
+pela variável `DATABASE_URL`, por exemplo:
+
+```text
+postgresql://postgres:postgres123@127.0.0.1:5432/projeto_financeiro
+```
+
+Documentação interativa: `http://localhost:8080/docs`
+
+Especificação OpenAPI: `http://localhost:8080/openapi.json`
+
+Rotas principais:
+
+- `GET/POST /users`
+- `GET/PUT/DELETE /users/{id}`
+- `GET/POST /users/{userId}/messages`
+- `GET/PUT/DELETE /messages/{id}`
+- `GET /health`
